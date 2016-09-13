@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DashboardActivity">
+
+    <Button
+        android:id="@+id/btnCountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Countries"
+        android:onClick="clickCountries"/>
+
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCountries"
+        android:orientation="horizontal">
+        <!-- put two buttons here that B1 and B2. B1 on the left side and B2 on the right side. make both of them take 50% of buttonsContainer -->
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B1" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B2" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonsContainer"
+        android:text="B3" />
+
+    <!--put a textview here that sits on the bottom and below B3 button -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textid"
+        android:text="Hello World"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+</RelativeLayout>
